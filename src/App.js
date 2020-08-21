@@ -3,7 +3,7 @@ import "./App.css";
 import faker from "faker";
 
 import ApprovalCard from "./ApprovalCard";
-import CommentDetail from "./CommentDetail";
+import CommentDetail from "./commentDetail";
 
 function componentBuilder() {
   let data = [
@@ -59,15 +59,21 @@ function componentBuilder() {
 
 // convert to class-based component
 
-function App() {
-  return (
-    <div className="ui container">
-      <ApprovalCard>
-        <p>Are you sure?</p>
-      </ApprovalCard>
-      {componentBuilder()}
-    </div>
-  );
+
+
+class App extends React.Component {
+  
+  render() {
+    return (
+      <div className="ui container">
+        <ApprovalCard>
+          <p>Are you sure?</p>
+        </ApprovalCard>
+        {componentBuilder()}
+      </div>
+    );
+  }
+  
 }
 
 export default App;
