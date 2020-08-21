@@ -1,5 +1,7 @@
 import React from "react";
 
+// Convert to class based component
+
 const ApprovalCard = (props) => {
   return (
     <div className="ui card">

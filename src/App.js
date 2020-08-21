@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import faker from "faker";
 
@@ -57,6 +56,8 @@ function componentBuilder() {
       );
     });
 }
+
+// convert to class-based component
 
 function App() {
   return (

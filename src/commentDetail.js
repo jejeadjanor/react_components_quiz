@@ -1,5 +1,6 @@
 import React from "react";
 
+// convert to class-based component
 const CommentDetail = (props) => {
   return (
     <div className="comment">
