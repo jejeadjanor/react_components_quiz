@@ -5,13 +5,18 @@ import React from "react";
 class ApprovalCard extends React.Component {
   constructor(props) {
     super(props);
-    this.content = "Hi, I am Jemima Adjanor"
+
+    this.state = {
+      children : "5 Children",
+    };
+    
   }
   
   render() {
+    const greeting = 'Welcome to React';
     return (
       <div className="ui card">
-        <div className="content">{props.children}</div>
+        <div className="content">{this.state.children}</div>
         <div className="extra content">
           <div className="ui two buttons">
             <div className="ui basic green button">Approve</div>

@@ -5,26 +5,29 @@ import React from "react";
 class CommentDetail extends React.Component {
   constructor(props) {
     super(props);
-    comment = faker.image.avatar(),
-    this.props.author = "Jemima Adjanor",
-    this.props.timeAgo = new Date().getTime(),
-    this.props.commentText = "I am a full stackdeveloper"
+    this.state = {
+      comment : this.faker.image.avatar(),
+      author : "Jemima Adjanor",
+      timeAgo : new Date().getTime(),
+      commentText : "I am a full stackdeveloper"
+    };
+   
   }
   
   render() {
     return (
       <div className="comment">
         <a href="/" className="avatar">
-          <img alt="avatar" src={props.img} />
+          <img alt="avatar" src={this.state.img} />
         </a>
         <div className="content">
           <a href="/" className="author">
-            {props.author}
+            {this.state.author}
           </a>
           <div className="metadata">
-            <span className="date">{props.timeAgo}</span>
+            <span className="date">{this.state.timeAgo}</span>
           </div>
-          <div className="text">{props.commentText}</div>
+          <div className="text">{this.state.commentText}</div>
         </div>
       </div>
     );
