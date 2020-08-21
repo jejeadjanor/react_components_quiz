@@ -7,13 +7,12 @@ class ApprovalCard extends React.Component {
     super(props);
 
     this.state = {
-      children : "5 Children",
+      children : this.props.children,
     };
     
   }
   
   render() {
-    const greeting = 'Welcome to React';
     return (
       <div className="ui card">
         <div className="content">{this.state.children}</div>

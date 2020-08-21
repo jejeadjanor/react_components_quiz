@@ -6,10 +6,10 @@ class CommentDetail extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      comment : this.faker.image.avatar(),
-      author : "Jemima Adjanor",
-      timeAgo : new Date().getTime(),
-      commentText : "I am a full stackdeveloper"
+      comment : this.props.img,
+      author : this.props.author,
+      timeAgo : this.props.timeAgo,
+      commentText : this.props.commentText
     };
    
   }
